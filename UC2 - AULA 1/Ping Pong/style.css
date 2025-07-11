@@ -1,0 +1,16 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url(https://i.pinimg.com/736x/7d/aa/f4/7daaf41d919e7c5199caca1f40a7cc8f.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+canvas{
+    background: rgb(green, red, blue);
+    display: block;
+    margin: 20px auto;
+    border: 2px solid white;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3.1 meu</title>
+</head>
+<body>
+    <script>
+        function moedasTotais(pequenas, grandes){
+            // calculando o total de pomtos no return
+            return (Number(pequenas) * 1) + (Number(grandes) * 5)
+        }
+
+        let pequenas = prompt("quantas moedas pequenas vc coletou???")
+        let grandes = prompt("quantas moedas grandes voce coletou???")
+
+        let total = moedasTotais(pequenas, grandes)
+
+        alert("voce fez " + total + " pontos de moedas")
+    </script>
+</body>
+</html>

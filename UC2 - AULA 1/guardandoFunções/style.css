@@ -1,0 +1,108 @@
+/* Estilização do corpo da página */
+body{
+    background-color: rgb(90, 255, 255); /* Cor */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* tipo de fonte */
+    color: rgb(95, 46, 209);
+    padding: 80px;
+}
+
+h1{
+    text-align: center;
+    color: black; /* vai mudar só a cor do h1, os outros não mudam */
+    font-size: 50px;
+}
+
+
+button{
+    display: block; /* faz com que o botão se comporte como um bloco (ocupa uma largula dispinivel) */
+    width: 100%; /* nosso botão ocupa uma largura  em 100% */
+    max-width: 400px; /* largura maxima de 400px */
+    margin: 10px auto; /* margem de 10px verticalmente e centralizado horizontal */
+    padding: 10px; /* espaçamento interno */ 
+    font-size: 16px; /* tamanho da minha fonte */
+    background-color: rgb(85, 215, 255); /* cor de fundo do botão */
+    color: rgb(255, 255, 255); /* cor do texto do botão */ 
+    border: dashed blue; /* 2px é a espessura da minha borda, dashed o formato e blue a cor | dotted (pontilhada) , double(duas linhas de borda), solid(linha sólida de borda) */
+    border-radius: 80px; /* bordas arredondadas */ 
+    cursor: pointer; /* deixa o cursor do mause com formato de mãozinha */ 
+    gap: 7px;
+}
+
+/* efeito hover (muda a cor ao passar o mouse */
+button:hover{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(191, 48, 235); /* muda a cor do mause quando passa por cima */
+    border: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.motnha{
+   display: flex ;
+   justify-content: center ;
+   align-items: center;
+   border: 2px solid black;
+   border-radius: 20px;
+   padding: 200px;
+   backdrop-filter: blur(200px);
+   font-family: 'Courier New', Courier, monospace;
+   color: red;
+}*/
+
+/*button{
+    border-radius: 20px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bolder ;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px solid black;
+}
+
+button:hover{
+    font-size: 40px;
+    cursor: pointer;
+}*/
