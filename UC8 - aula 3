@@ -2,23 +2,28 @@ try{
     // 1. lê o que o usuário vai digitou nos campos de texto
     String pesoStr = txtPESO.getText().trim().replace( ",",  ".");
     String alturaStr = txtALTURA.getText().trim().replace( ",",  ".");
+
     // 2. verifica se os campos estão vazios
     if(pesoStr.isEmpty() || alturaStr.isEmpty()) {
         lblRESULTADO.setText( "por favor, preencha peso e altura. ");
         lblRESULTADO.setForeground(new java.awt.Color( 200,  0,  0));
         return;
     }
+
     // 3. converte texto para número (double)
     double peso = Double.parseDouble(pesoStr);
     double altura = Double.parseDouble(alturaStr);
+
     // 4. varificando se os valores
     if( peso <= 0 || altura <= 0) {
     lblRESULTADO.setText( "valores ser maiores que zero");
     lblRESULTADO.setForeground( new java.awt.Color( 200,  0,  0));
     return;
     }
+
     // 5. calcular IMC (peso/altura)
     double imc = peso / (altura * altura);
+
     // 6. define a classificação de aocrdo como IMC
     String classificacao;
     java.awt.Color cor;
@@ -42,16 +47,27 @@ try{
         classificacao = "obesidade III";
         cor = new java.awt.Color(139, 0, 0);
     }
+
     // 7. exibe o rwesultado formatado
         lblRESULTADO.setText(String.format( "IMC: %.2f - %s", imc, classificacao));
         lblRESULTADO.setForeground(cor);
     }catch(NumberFormatException e) {
+
     // caso o usuario digite algo que não é numero
         lblRESULTADO.setText( "entrada invalida! use números, ex: 70 e 1,70");
         lblRESULTADO.setForeground( new java.awt.Color(200, 0, 0));
     }
         // TODO add your handling code here:
     }                                           
+
+
+
+
+
+
+
+
+
 
     private void btnLIMPARActionPerformed(java.awt.event.ActionEvent evt) {                                          
         txtPESO.setText("");
